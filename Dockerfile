@@ -1,4 +1,4 @@
-FROM php:7.4-apache
+FROM php:8.1.18-apache
 
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
@@ -25,7 +25,11 @@ RUN docker-php-ext-install \
     opcache \
     calendar \
     pdo_mysql \
-    mysqli
+    mysqli \
+    mysqlnd \
+    mbstring \
+    json \
+    libcurl \
 
 COPY config/vhost.conf /etc/apache2/sites-available/000-default.conf
 COPY config/php.ini /usr/local/etc/php/php.ini
