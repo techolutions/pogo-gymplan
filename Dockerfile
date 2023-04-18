@@ -16,6 +16,7 @@ RUN apt-get install -y \
     libmcrypt-dev \
     libreadline-dev \
     libfreetype6-dev \
+    libonig-dev \
     g++
 
 RUN docker-php-ext-install \
