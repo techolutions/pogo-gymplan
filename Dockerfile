@@ -39,4 +39,6 @@ RUN composer self-update
 
 COPY src/ /var/www/html/
 
+RUN composer install -o
+
 EXPOSE 80
