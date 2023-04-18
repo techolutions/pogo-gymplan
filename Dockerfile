@@ -25,7 +25,6 @@ RUN docker-php-ext-install \
     opcache \
     calendar \
     pdo_mysql \
-    mysqli \
     mysqlnd \
     mbstring \
     json \
