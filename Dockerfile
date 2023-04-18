@@ -27,7 +27,8 @@ RUN docker-php-ext-install \
     pdo_mysql \
     mysqli
 
-COPY .docker/000-default.conf /etc/apache2/sites-available/000-default.conf
+COPY config/vhost.conf /etc/apache2/sites-available/000-default.conf
+COPY config/php.ini /usr/local/etc/php/php.ini
 
 RUN a2enmod rewrite headers
 
