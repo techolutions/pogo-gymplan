@@ -29,7 +29,7 @@ RUN docker-php-ext-install \
     mysqlnd \
     mbstring \
     json \
-    libcurl \
+    curl
 
 COPY config/vhost.conf /etc/apache2/sites-available/000-default.conf
 COPY config/php.ini /usr/local/etc/php/php.ini
