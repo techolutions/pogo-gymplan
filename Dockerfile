@@ -26,9 +26,7 @@ RUN docker-php-ext-install \
     calendar \
     pdo_mysql \
     mysqli \
-    mbstring \
-    json \
-    curl
+    mbstring
 
 COPY config/vhost.conf /etc/apache2/sites-available/000-default.conf
 COPY config/php.ini /usr/local/etc/php/php.ini
