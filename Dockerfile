@@ -1,4 +1,4 @@
-FROM php:7.4.33-apache
+FROM php:8.1.18-apache
 
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
